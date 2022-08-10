@@ -1,0 +1,71 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---- HEADER ---- */
+
+.header{
+    background-color: #191716;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.header_logo{
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 40px;
+    background-color: #7161EF;
+    color: #E8EEF2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#header_nav_list{
+    display: block;
+    background-color: #7161EF;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.js #header_nav_list{
+    overflow-y: hidden;
+    max-height: 0;
+
+    transition: max-height .3s ease-in-out;
+}
+
+.js #header_nav_list.active{
+    max-height: 300px;
+}
+
+#header_nav_list li{
+    display: block;
+    color: #E8EEF2;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ---- BUTTONS ---- */
+
+.header .btn_menu div{
+    width: 25px;
+    height: 2px;
+    margin: 8px;
+    background-color: #E8EEF2;
+}
+.header .btn_menu{
+    cursor: pointer;
+}
