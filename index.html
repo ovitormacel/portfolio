@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitor Macel - Portfolio</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body class="no-js">
 
     <header class="header">
-        <nav class="header_nav">
-            <a href="index.html" class="header_logo">V</a>
+        <a href="index.html" class="header_logo">V</a>
 
-            <div class="btn_menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <div class="btn_menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
 
-            
+        <nav class="header_nav"></nav>
             <ul class="" id="header_nav_list">
-                <li>Inicio</li>
-                <li>Sobre</li>
-                <li>Skills</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-
         </nav>
     </header>
+
+    <main>
+
+        <section class="home" id="home">
+            <div class="col-1">
+                <h1>Um <span>Desenvolvedor</span> Front-End Para o Seu Projeto.</h1>
+                <a href="#sobre" class="btn_call">Vem Me Conhecer</a>
+            </div>
+            <img src="/images/foto_perfil.jpeg" alt="Foto de perfil">
+        </section>
+
+    </main>
 
     <script src="js/burguerMenu.js"></script>
     <script src="js/main.js"></script>

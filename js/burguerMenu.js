@@ -8,5 +8,6 @@ function BurguerMenu(config){
 
     function toggleMenu(){
         _this.navigation.classList.toggle('active');
+        _this.btn.classList.toggle('active');
     }
 };
