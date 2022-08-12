@@ -1,23 +1,23 @@
 *{
-    font-family: 'Sintony', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background-color: black;
+    background-color: #040404;
 }
 
 .container{
     margin: 0 auto;
     max-width: 950px;
-    padding: 0 60px;
+    padding: 0 45px;
 }
 
 /* ---- HEADER ---- */
 
 .header{
-    background-color: #191716;
+    background-color: black;
+    border-bottom: 2px solid #212121;
     height: 10vh;
-    position: relative;
 }
 
 .header_logo{
@@ -25,10 +25,10 @@ body{
     width: 40px;
     padding: 10px 0;
     border-radius: 10px;
-    background-color: #7161EF;
+    background-color: #604df3;
     color: #E8EEF2;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
 
     position: absolute;
@@ -42,7 +42,7 @@ body{
 
 .js #header_nav_list{
     display: block;
-    background-color: #7161EF;
+    background-color: #604df3;
     position: absolute;
     top: 10vh;
     width: 100%;
@@ -66,7 +66,7 @@ body{
     padding: 20px;
 }
 #header_nav_list a:hover{
-    background-color: #6944cf;
+    background-color: #5a48e4;
     cursor: pointer;
 }
 
@@ -102,16 +102,9 @@ body{
 /* ---- HOME ---- */
 
 .home{
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    margin: 0px auto;
+    max-width: 500px;
     padding: 0 60px;
     height: 90vh;
-}
-
-.home .col-1{
-    max-width: 500px;
 }
 
 .home h1{
@@ -122,10 +115,10 @@ body{
     font-weight: bold;
     line-height: 40px;
 
-    border-bottom: 2px solid #7161EF;
+    border-bottom: 2px solid #604df3;
 }
 .home h1 span{
-    color: #7161EF;
+    color: #604df3;
 }
 
 .home img{
@@ -135,10 +128,55 @@ body{
 }
 
 
+
+/* ---- SOBRE ---- */
+
+
+.sobre{
+    background-image: linear-gradient(#5e4bf0 20%, #9d25ed 90%);
+    height: 100vh;
+}
+
+.sobre h2{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color:#E8EEF2;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #E8EEF2;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.sobre p{
+    color: #E8EEF2;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.sobre p:nth-child(2){
+    margin-top: 30px;
+}
+
+.sobre img{
+    display: none;
+}
+
+
+
+
+/* ---- SKILLS ---- */
+.card_skills{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+
 /* ---- BUTTONS ---- */
 
 .btn_call{
-    background-color: #5efc8d;
+    background-image: linear-gradient(to right, #5efc8d, #98fc5e);
     display: inline-block;
     padding: 15px 40px;
     border-radius: 40px;
