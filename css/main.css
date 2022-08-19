@@ -6,6 +6,19 @@ body{
     background-color: #040404;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5efc8d;
+    
+}
+
 .container{
     margin: 0 auto;
     max-width: 950px;
@@ -16,7 +29,7 @@ body{
 
 .header{
     background-color: black;
-    border-bottom: 2px solid #212121;
+    border-bottom: 2px solid #131313;
     height: 8vh;
     width: 100%;
     top: 0;
@@ -163,9 +176,14 @@ body{
 
 
 /* ---- SKILLS ---- */
+
+
 .card_skills{
     width: 100%;
     margin-top: 30px;
+}
+.card_skills:nth-child(3){
+    margin-bottom: 100px;
 }
 
 
@@ -210,8 +228,101 @@ body{
 
 
 
-/* ---- BUTTONS ---- */
+/* ---- PROJETOS ---- */
 
+.projetos{
+    background-color: #131313;
+    padding: 5px 0;
+}
+
+.projetos h2{
+    text-align: center;
+    
+    color: #E8EEF2;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2em;
+    border-bottom: 2px solid #5e4bf0;
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.project_card{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px black;
+}
+
+.project_card img{
+    width: 100%;
+    height: 100%;
+
+    transition: .5s linear;
+}
+
+.project_card .layer{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    background-image: linear-gradient(rgba(94, 75, 240, .9), #5e4bf0);
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    opacity: 0;
+
+    transition: .3s linear;
+}
+
+.project_card .layer h4{
+    margin: 0;
+    color: #E8EEF2;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.project_card .layer p{
+    color: #E8EEF2;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-weight: 300;
+    font-size: .9em;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.project_card .btn_view{
+    margin: 0 auto;
+}
+.project_card .btn_view i{
+    margin-right: 10px;
+}
+
+.project_card:hover .layer{
+    opacity: 1;
+    cursor: pointer;
+}
+.project_card:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+/* ---- BUTTONS ---- */
 .btn_call{
     background-image: linear-gradient(to right, #5efc8d, #98fc5e);
     display: inline-block;
@@ -227,9 +338,30 @@ body{
 
     transition: .2s;
 }
-
 .btn_call:hover{
     padding: 20px 45px;
+}
+
+
+
+.btn_view{
+    text-decoration: none;
+    width: 150px;
+    padding: 10px 0;
+    border-radius: 30px;
+    border: 3px solid #5efc8d;
+
+    color: #E8EEF2;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+    transition: .3s linear;
+}
+
+.btn_view:hover{
+    background-color: #5efc8d;
+    color: black;
+    transform: scale(1.1, 1.1);
 }
 
 
