@@ -1,3 +1,1 @@
-Portfolio pessoal. Desenvolvimento
-
-HEADER, HOME, SOBRE
+Portfolio Pessoal.
